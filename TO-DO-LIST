@@ -1,11 +1,12 @@
-To-do-list (Matteo this is also for you if you would like to participate):
-  - Offline compatibility
+To-do-list (sorted in priority):
+  - Fix the corner-case of ListScreen not showing words if no new word is added when the app is built
   - Feature that removes words from the word list
+  - Offline compatibility
+  - Program the daily word guesser minigame
   - Update Runner.xproj so Xcode can build the app on a tangible device
   - Decorate the Home Page
-  - Program the daily word guesser minigame
-  - Add a splash screen
   - Improve the selected word screen
+  - Add a splash screen
 
 Completed:
   - Firebase is set on VSCode
