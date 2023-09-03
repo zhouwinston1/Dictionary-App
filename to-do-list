@@ -1,0 +1,15 @@
+To-do-list (matteo this is also for you if you would like to participate):
+  - Offline compatability
+  - Feature that removes words from the word list
+  - Update Runner.xproj so xcode can build the app on a tangible device
+  - Decorate the Home Page
+  - Program the daily word guesser minigame
+  - Add a splash screen
+  - Improve the selected word screen
+
+Completed:
+  - Firebase is setup on VSCode
+  - App is connected to a Realtime DB
+  - App is able to fetch data from an API
+  - Floating action button with text controller
+  - ListScreen is able to pass in arguments which inserts the wordbank onto the listview builder
