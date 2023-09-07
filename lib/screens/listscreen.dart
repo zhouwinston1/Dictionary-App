@@ -15,16 +15,18 @@ class ListScreen extends StatefulWidget {
 }
 
 class _ListScreenState extends State<ListScreen> {
+  final TextEditingController _removeController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     if (widget.wordList.isNotEmpty) {
       for (var key in widget.wordList.keys) {
-        if (!wordBank.contains(widget.wordList[key]) && widget.wordList[key] != '1') {
+        if (!wordBank.contains(widget.wordList[key]) &&
+            widget.wordList[key] != '1') {
           wordBank.add(widget.wordList[key]);
         }
       }
     }
-
 
     // wordBank.add(WordBankInfo());
     return Scaffold(
@@ -32,6 +34,37 @@ class _ListScreenState extends State<ListScreen> {
         title: const Text('Word List'),
         centerTitle: true,
         backgroundColor: Colors.grey.shade400,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () async {
+          await showDialog(
+              context: context,
+              builder: (context) {
+                return AlertDialog(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  title: const Text(
+                    'Add a word to your list',
+                    style: TextStyle(fontSize: 10),
+                  ),
+                  content: TextField(
+                    controller: _removeController,
+                    decoration: const InputDecoration(
+                      labelText: 'Enter your word',
+                    ),
+                  ),
+                  actions: <Widget>[
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text('Add'),
+                    ),
+                  ],
+                );
+              });
+        },
+        tooltip: 'Add a word',
+        child: const Icon(Icons.remove),
       ),
       body: ListView.builder(
         scrollDirection: Axis.vertical,

@@ -1,7 +1,6 @@
 import 'dart:async';
-
-import 'package:dictionary_app_matteo/navbar.dart';
-import 'package:dictionary_app_matteo/screens/listscreen.dart';
+import '/models/navbar.dart';
+import 'listscreen.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 

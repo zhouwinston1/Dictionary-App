@@ -1,5 +1,5 @@
-import 'package:dictionary_app_matteo/models/post.dart';
-import 'package:dictionary_app_matteo/services/api_request.dart';
+import '/models/post.dart';
+import '/services/api_request.dart';
 import 'package:flutter/material.dart';
 
 class SelectedWordScreen extends StatefulWidget {

@@ -1,4 +1,4 @@
-import 'package:dictionary_app_matteo/models/post.dart';
+import '/models/post.dart';
 import 'package:http/http.dart' as http;
 
 // ignore: camel_case_types

@@ -121,14 +121,14 @@ class Definition {
 }
 
 class Phonetic {
-    String text;
-    String audio;
+    String? text;
+    String? audio;
     String? sourceUrl;
     License? license;
 
     Phonetic({
-        required this.text,
-        required this.audio,
+        this.text,
+        this.audio,
         this.sourceUrl,
         this.license,
     });
