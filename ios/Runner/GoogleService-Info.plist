@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>907417611895-3ul62uuvqp1gkm2tg22q8kirrdvfdbom.apps.googleusercontent.com</string>
+	<string>315847861355-a4aile33untqmi1b5pg3tbsa7qotnrtv.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.907417611895-3ul62uuvqp1gkm2tg22q8kirrdvfdbom</string>
+	<string>com.googleusercontent.apps.315847861355-a4aile33untqmi1b5pg3tbsa7qotnrtv</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAJHOA5PiYqMl2PZl5PVKXnV7lCq4VUFFQ</string>
+	<string>AIzaSyAnT3p6DhLSHHchMOLflNBEw4nF6Z056Kc</string>
 	<key>GCM_SENDER_ID</key>
-	<string>907417611895</string>
+	<string>315847861355</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.dictionaryAppMatteo</string>
+	<string>com.example.dictionaryApp</string>
 	<key>PROJECT_ID</key>
-	<string>dictionary-app-b0b43</string>
+	<string>dictionary-app-953bf</string>
 	<key>STORAGE_BUCKET</key>
-	<string>dictionary-app-b0b43.appspot.com</string>
+	<string>dictionary-app-953bf.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:907417611895:ios:b0e93283d922e3cd2f2072</string>
+	<string>1:315847861355:ios:fa9199dfa636c4aa963d2e</string>
+	<key>DATABASE_URL</key>
+	<string>https://dictionary-app-953bf-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

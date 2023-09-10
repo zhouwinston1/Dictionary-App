@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "907417611895",
-    "project_id": "dictionary-app-b0b43",
-    "storage_bucket": "dictionary-app-b0b43.appspot.com"
+    "project_number": "315847861355",
+    "firebase_url": "https://dictionary-app-953bf-default-rtdb.firebaseio.com",
+    "project_id": "dictionary-app-953bf",
+    "storage_bucket": "dictionary-app-953bf.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:907417611895:android:bf4121ffca85daa62f2072",
+        "mobilesdk_app_id": "1:315847861355:android:8d7c5619e1bd726f963d2e",
         "android_client_info": {
-          "package_name": "com.example.dictionary_app_matteo"
+          "package_name": "com.example.dictionary_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "907417611895-641n8p0qcu3arjgbmgkp1enplqcvb7gq.apps.googleusercontent.com",
+          "client_id": "315847861355-a1fa39cf58prau3kuv09htsma776b1ek.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCXaShmcmm4XAE7BpAxr6ib6yjQLVbSxZc"
+          "current_key": "AIzaSyAK-MLdP99gl8JfrXvZDfP_URDSAc65QQw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "907417611895-641n8p0qcu3arjgbmgkp1enplqcvb7gq.apps.googleusercontent.com",
+              "client_id": "315847861355-a1fa39cf58prau3kuv09htsma776b1ek.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "315847861355-a4aile33untqmi1b5pg3tbsa7qotnrtv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.dictionaryApp"
+              }
             }
           ]
         }

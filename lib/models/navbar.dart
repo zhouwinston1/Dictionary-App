@@ -1,10 +1,11 @@
+import 'package:dictionary_app/screens/settingsscreen.dart';
 import 'package:flutter/material.dart';
 import '/screens/homescreen.dart';
 import '/screens/listscreen.dart';
 
 class HomePage extends StatefulWidget {
   final Map<String, dynamic> inputList;
-  HomePage({super.key, required this.inputList});
+  const HomePage({super.key, required this.inputList});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -17,8 +18,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final screens = [
-    HomeScreen(),
+    const HomeScreen(),
     ListScreen(wordList: widget.inputList),
+    const SettingsScreen()
   ];
     return Scaffold(
       body: screens[bottomNavIndex],

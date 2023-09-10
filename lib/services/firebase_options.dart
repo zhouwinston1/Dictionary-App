@@ -44,40 +44,44 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC-mm3TgBXBg-51NlNBzpMnKXeSE-PfrpQ',
-    appId: '1:907417611895:web:2dadfbfa86ca5f932f2072',
-    messagingSenderId: '907417611895',
-    projectId: 'dictionary-app-b0b43',
-    authDomain: 'dictionary-app-b0b43.firebaseapp.com',
-    storageBucket: 'dictionary-app-b0b43.appspot.com',
-    measurementId: 'G-QKF0WGR2VD',
+    apiKey: 'AIzaSyDE-r7TYaUFb9eot53aj2lX91p62wpC1us',
+    appId: '1:315847861355:web:d9a8b462799d95bf963d2e',
+    messagingSenderId: '315847861355',
+    projectId: 'dictionary-app-953bf',
+    authDomain: 'dictionary-app-953bf.firebaseapp.com',
+    databaseURL: 'https://dictionary-app-953bf-default-rtdb.firebaseio.com',
+    storageBucket: 'dictionary-app-953bf.appspot.com',
+    measurementId: 'G-JD74RV8CQD',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCXaShmcmm4XAE7BpAxr6ib6yjQLVbSxZc',
-    appId: '1:907417611895:android:bf4121ffca85daa62f2072',
-    messagingSenderId: '907417611895',
-    projectId: 'dictionary-app-b0b43',
-    storageBucket: 'dictionary-app-b0b43.appspot.com',
+    apiKey: 'AIzaSyAK-MLdP99gl8JfrXvZDfP_URDSAc65QQw',
+    appId: '1:315847861355:android:8d7c5619e1bd726f963d2e',
+    messagingSenderId: '315847861355',
+    projectId: 'dictionary-app-953bf',
+    databaseURL: 'https://dictionary-app-953bf-default-rtdb.firebaseio.com',
+    storageBucket: 'dictionary-app-953bf.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAJHOA5PiYqMl2PZl5PVKXnV7lCq4VUFFQ',
-    appId: '1:907417611895:ios:b0e93283d922e3cd2f2072',
-    messagingSenderId: '907417611895',
-    projectId: 'dictionary-app-b0b43',
-    storageBucket: 'dictionary-app-b0b43.appspot.com',
-    iosClientId: '907417611895-3ul62uuvqp1gkm2tg22q8kirrdvfdbom.apps.googleusercontent.com',
-    iosBundleId: 'com.example.dictionaryAppMatteo',
+    apiKey: 'AIzaSyAnT3p6DhLSHHchMOLflNBEw4nF6Z056Kc',
+    appId: '1:315847861355:ios:fa9199dfa636c4aa963d2e',
+    messagingSenderId: '315847861355',
+    projectId: 'dictionary-app-953bf',
+    databaseURL: 'https://dictionary-app-953bf-default-rtdb.firebaseio.com',
+    storageBucket: 'dictionary-app-953bf.appspot.com',
+    iosClientId: '315847861355-a4aile33untqmi1b5pg3tbsa7qotnrtv.apps.googleusercontent.com',
+    iosBundleId: 'com.example.dictionaryApp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAJHOA5PiYqMl2PZl5PVKXnV7lCq4VUFFQ',
-    appId: '1:907417611895:ios:3d4cacc4f540f0552f2072',
-    messagingSenderId: '907417611895',
-    projectId: 'dictionary-app-b0b43',
-    storageBucket: 'dictionary-app-b0b43.appspot.com',
-    iosClientId: '907417611895-03uckgh840dtemg5defasevo95r6ver6.apps.googleusercontent.com',
-    iosBundleId: 'com.example.dictionaryAppMatteo.RunnerTests',
+    apiKey: 'AIzaSyAnT3p6DhLSHHchMOLflNBEw4nF6Z056Kc',
+    appId: '1:315847861355:ios:6d14139c51a90c3a963d2e',
+    messagingSenderId: '315847861355',
+    projectId: 'dictionary-app-953bf',
+    databaseURL: 'https://dictionary-app-953bf-default-rtdb.firebaseio.com',
+    storageBucket: 'dictionary-app-953bf.appspot.com',
+    iosClientId: '315847861355-cven6clp55m75cu5bk2kgn33jbfuungf.apps.googleusercontent.com',
+    iosBundleId: 'com.example.dictionaryApp.RunnerTests',
   );
 }

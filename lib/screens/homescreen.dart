@@ -1,10 +1,10 @@
-import 'dart:async';
 import '/models/navbar.dart';
-import 'listscreen.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 
 Map<String, dynamic> myMap = {};
+
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,25 +17,12 @@ class _HomeScreenState extends State<HomeScreen> {
   final TextEditingController _wordController = TextEditingController();
   final database = FirebaseDatabase.instance.reference();
 
-  Future<Map<String, dynamic>?> getDataOnce() async {
-    final snapshot = await database.child('wordList').get();
-    if (snapshot.exists) {
-      var data = snapshot.value;
-      if (data is Map) {
-        for (var key in data.keys) {
-          myMap[key] = data[key];
-        }
-      }
-    } else {
-      return {};
-    }
-    return null;
-  }
+  
 
   @override
   Widget build(BuildContext context) {
     final databaseWords = database.child('wordList');
-    getDataOnce();
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home'),
@@ -71,31 +58,31 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 actions: <Widget>[
                   ElevatedButton(
-                    onPressed: () {
+                    onPressed: () async {
+
                       myMap[_wordController.text] = _wordController.text;
 
-                      databaseWords.onValue.listen((event) {
-                        final data = event.snapshot.value;
-                        print(data);
+                      final snapshot = await database.child('wordList').get();
+                      if (snapshot.exists) {
+                        var data = snapshot.value;
                         if (data is Map) {
                           for (var key in data.keys) {
-                            if (myMap[key] != _wordController.text) {
-                              myMap[key] = data[key];
-                            }
+                            myMap[key] = data[key];
                           }
                         }
-                      });
+                      }
 
                       databaseWords.set(myMap);
-                      ListScreen(wordList: myMap);
+                      _wordController.clear();
+                      // ignore: use_build_context_synchronously
                       Navigator.of(context).pop();
+                      // ignore: use_build_context_synchronously
                       Navigator.pushReplacement(
                         context,
                         MaterialPageRoute(
                           builder: (context) => HomePage(inputList: myMap),
                         ),
                       );
-                      myMap = {};
                     },
                     child: const Text('Add'),
                   ),
