@@ -24,6 +24,7 @@ Future<Map<String, dynamic>?> getDataOnce() async {
       if (data is Map) {
         for (var key in data.keys) {
           myInitMap[key] = data[key];
+          print(key);
         }
       }
     } else {
@@ -36,7 +37,7 @@ Future<Map<String, dynamic>?> getDataOnce() async {
   Widget build(BuildContext context) {
     getDataOnce();
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       home: HomePage(inputList: myInitMap),
     );
   }

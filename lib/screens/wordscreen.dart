@@ -39,11 +39,26 @@ class _SelectedWordScreenState extends State<SelectedWordScreen> {
         itemCount: posts!.length,
         itemBuilder: (context, index) {
           return Card(
-            child: ListTile(
-              title: Text(
-                posts![index].word,
+            color: Colors.black,
+            margin: const EdgeInsets.symmetric(
+                vertical: 10.0), // Adjust the value as needed
+            child: Padding(
+              padding: const EdgeInsets.all(5.0), // Adjust the value as needed
+              child: ListTile(
+                title: Text(
+                  posts![index].word,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
+                subtitle: Text(
+                  posts![index].meanings[0].definitions[0].definition,
+                  style: const TextStyle(color: Colors.white,
+                  fontSize: 15),
+                ),
               ),
-              subtitle: Text(posts![index].meanings[0].definitions[0].definition),
             ),
           );
         },
@@ -60,8 +75,13 @@ class _SelectedWordScreenState extends State<SelectedWordScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 15, 15, 15),
       appBar: AppBar(
-        title: Text(widget.chosenWord),
+        title: Text(
+          widget.chosenWord,
+          style: const TextStyle(fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.black,
       ),
       body: _buildBody(),
     );
